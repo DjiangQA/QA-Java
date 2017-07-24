@@ -1,0 +1,10 @@
+package main;
+
+public class Books extends Items {
+
+	public Books(String itemName, int itemID, int numberAvailable, String publishDate) {
+		super(itemName, itemID, numberAvailable, publishDate);
+		
+	}
+	
+}

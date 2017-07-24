@@ -1,0 +1,108 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+	double CM = 19.99;
+	double litre1 = 20.0;
+	double coverage1 = 10.0;
+	
+	double AJ = 17.99; //17.99
+	double litre2 = 15.0;
+	double coverage2 = 11.0;
+	
+	double DP = 25.0; //25
+	double litre3 = 10.0;
+	double coverage3 = 20.0;
+	
+	//cheapest to buy
+	int roomsize = 500;
+	double litreneeded1 = roomsize/coverage1 ;
+	double litreneeded2 = roomsize/coverage2 ;
+	double litreneeded3 = roomsize/coverage3 ;
+	
+	System.out.println("litre needed for the room\t");
+	System.out.print("Room size: ");
+	System.out.print(roomsize);
+	System.out.println(" m2");
+	
+	System.out.print("CheapoMax: ");
+	System.out.println(litreneeded1);
+	
+	System.out.print("AverageJoes: ");
+	System.out.println(litreneeded2);
+	
+	System.out.print("DuluxourousPaints: ");
+	System.out.println(litreneeded3);
+	
+	double ans1 = litreneeded1 / litre1;
+	double ans2 = litreneeded2 / litre2;
+	double ans3 = litreneeded3 / litre3;
+	
+	System.out.print("No of Tins needed from CheapoMax: ");
+	System.out.println(ans1);
+	
+	System.out.print("No of Tins needed from AverageJoes: ");
+	System.out.println(ans2);
+	
+	System.out.print("No of Tins needed from DuluxourousPaints: ");
+	System.out.println(ans3);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//double ans1 =  CM/litre1;
+	//double ans2 =  AJ/litre2;
+	//double ans3 =  DP/litre3;
+
+	
+	
+	//System.out.println("Price per litre\t");
+	//System.out.println(ans1);
+	//System.out.println(ans2);
+	//System.out.println(ans3);
+	
+	//waste the least
+	
+	//double ans4 = coverage1*litre1-roomsize;
+	//double ans5 = coverage2*litre2-roomsize;
+	//double ans6 = coverage3*litre3-roomsize;
+	
+	//System.out.println("Waste the least\t");
+	//System.out.println(ans4);
+	//System.out.println(ans5);
+	//System.out.println(ans6);
+	
+	//best choice for any room
+	
+	//double ans7 = coverage1*litre1*ans1-roomsize;
+	//double ans8 = coverage2*litre2*ans2-roomsize;
+	//double ans9 = coverage3*litre3*ans3-roomsize;
+	
+	
+	//System.out.println("Cheapest for any room\t");
+	//System.out.println(ans7);
+	//System.out.println(ans8);
+	//System.out.println(ans9);
+	
+	}
+
+}
+
+//CheapoMax (20Litre) £19.99
+//This tin of paint will cover 10m2 per Litre
+
+//AverageJoes (15 Litre) £17.99
+//This tin of paint will cover 11m2 per Litre
+
+//DuluxourousPaints (10 Litre) £25
+//This tin of paint will cover 20m2 per Litre

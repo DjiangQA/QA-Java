@@ -1,0 +1,18 @@
+
+public class motorcycle extends Vehicle
+{
+	String bikeName;
+	String bikeModle;
+	int bikeAge;
+	int bikeCost;
+	
+	public motorcycle(int setID, int setPrice, String setName, String setModle, int setAge, int setCost)
+	{
+		super (setID, setName, setPrice);
+		bikeName = setName;
+		bikeModle = setModle;
+		bikeAge = setAge;
+		bikeCost  = setCost;
+		//over load
+	}
+}

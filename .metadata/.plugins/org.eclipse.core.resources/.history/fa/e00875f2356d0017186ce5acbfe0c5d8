@@ -1,0 +1,17 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Person Dave = new Person("Dave",23,"JT1");
+		Person Jess = new Person("Jess",23,"JT2");
+		Person Alex = new Person("Alex",25,"JT3");
+		Person Allen = new Person("Allen",28,"JT4");
+		Person Dee = new Person("Dee",35,"JT5");
+		
+		System.out.println(Dave.returninfo());
+		System.out.println(Jess.returninfo());
+		System.out.println(Alex.returninfo());
+		System.out.println(Dee.returninfo());
+	}
+
+}

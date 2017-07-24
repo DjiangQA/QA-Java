@@ -1,0 +1,13 @@
+package main;
+
+public class Newspaper extends Items {
+	
+	String publisher;
+
+	public Newspaper(String itemName, int itemID, int numberAvailable, String publishDate, String publisher) {
+		super(itemName, itemID, numberAvailable, publishDate);
+		this.publisher = publisher;
+		
+	}
+
+}

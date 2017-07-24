@@ -1,0 +1,19 @@
+import java.io.FileNotFoundException;
+
+public class Main {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		//ArrayList peopleList = new ArrayList();
+		
+		//int itemCount = peopleList.size();
+		
+		//System.out.println(Dave.returninfo());
+		//System.out.println(Jess.returninfo());
+		//System.out.println(Alex.returninfo());
+		//System.out.println(Dee.returninfo());
+		
+		Readerwriter.Writer();
+		
+	}
+
+}

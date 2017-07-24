@@ -1,0 +1,45 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+	double CM = 19.99;
+	int litre1 = 20;
+	int coverage1 = 10;
+	
+	double AJ = 17.99; //17.99
+	int litre2 = 15;
+	int coverage2 = 11;
+	
+	int DP = 25; //25
+	int litre3 = 10;
+	int coverage = 20;
+	
+	//cheapest to buy
+	double ans1 =  litre1/CM;
+	double ans2 =  litre2/AJ;
+	float ans3 =  litre3/DP;
+	
+	System.out.println(ans1);
+	System.out.println(ans2);
+	System.out.println(ans3);
+	
+	//waste the least
+	
+	
+	//best choice for any room
+	
+	
+	
+	
+	}
+
+}
+
+//CheapoMax (20Litre) £19.99
+//This tin of paint will cover 10m2 per Litre
+
+//AverageJoes (15 Litre) £17.99
+//This tin of paint will cover 11m2 per Litre
+
+//DuluxourousPaints (10 Litre) £25
+//This tin of paint will cover 20m2 per Litre

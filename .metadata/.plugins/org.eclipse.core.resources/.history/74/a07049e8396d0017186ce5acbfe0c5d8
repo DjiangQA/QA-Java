@@ -1,0 +1,31 @@
+import java.io.*;
+
+public class Readerwriter {
+	
+	static Person Dave = new Person("Dave",23,"JT1");
+	static Person Jess = new Person("Jess",23,"JT2");
+	static Person Alex = new Person("Alex",25,"JT3");
+	static Person Allen = new Person("Allen",28,"JT4");
+	static Person Dee = new Person("Dee",35,"JT5");
+	
+	public static void Writer() throws FileNotFoundException
+	{
+		
+		PrintWriter writer = new PrintWriter("People List.txt");
+		writer.println(Dave.returninfo());
+		
+		writer.println(Jess.returninfo());
+		
+		writer.println(Alex.returninfo());
+		
+		writer.println(Allen.returninfo());
+		
+		writer.println(Dee.returninfo());
+		
+		writer.close();
+		
+	}
+	
+	
+	
+}

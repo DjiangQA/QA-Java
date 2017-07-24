@@ -1,0 +1,13 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		car BMW = new car(1,"BMW",20000,"M3",true);
+		//motorcycle M1 = new motorcycle ("m1","md1",);
+		
+		System.out.println();
+		System.out.println(BMW.returninfo());
+
+	}
+
+}

@@ -1,0 +1,46 @@
+package testing;
+
+import main.ItemManager;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestItemmanager {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@Test
+	public void addItems() {
+		
+	}
+	
+	public void removeItems() {
+		
+	}
+	
+	public void checkInItems() {
+		
+	}
+	
+	public void checkOutItems() {
+		
+	}
+	
+	public void updateItems() {
+		
+	}
+	
+	public void displayItems() {
+		
+	}
+	
+	
+
+
+}

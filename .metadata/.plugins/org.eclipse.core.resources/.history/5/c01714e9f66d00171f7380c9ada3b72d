@@ -1,0 +1,17 @@
+package main;
+
+public class Maps extends Items {
+	
+	String location;
+	
+	public String mapinfo()
+	{
+		return new String ("Location:"+ location +" Name: "+ itemName + " item ID:" + itemID + " Number Available:" + numberAvailable + " PublishDate: " + publishDate);
+	}
+
+	public Maps(String itemName, int itemID, int numberAvailable, String publishDate, String location) {
+		super(itemName, itemID, numberAvailable, publishDate);
+		this.location = location;
+	}
+
+}

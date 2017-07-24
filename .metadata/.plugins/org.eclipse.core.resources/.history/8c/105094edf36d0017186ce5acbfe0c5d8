@@ -1,0 +1,10 @@
+package main;
+
+public class Staff extends Users{
+
+	public Staff(String userName, int userID, String borrowedItems) {
+		super(userName, userID, borrowedItems);
+		
+	}
+
+}

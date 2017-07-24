@@ -1,0 +1,35 @@
+
+public class Intermediate {
+
+	public static void main(String[] args) 
+	{
+		int a = 18;
+		int b = 14;
+		int c = 21;
+		int d = 0;
+		int e = 0;
+		
+		d = c - a;
+		e = c - b;
+		
+		if (a>21 & b>21)
+		{
+			System.out.println("0");
+		}
+		
+		
+		if (e>d)
+		{
+			System.out.println(a);
+		}
+		else
+		{
+			System.out.println(b);
+		}
+		
+		System.out.println();
+		
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package main;
+
+import java.util.ArrayList;
+
+public class ItemManager {
+	ArrayList<Items> itemList = new ArrayList<Items>();
+	
+	public void addItem(Items I) {
+		itemList.add(I);
+	}
+	
+	
+
+	public void removeItemById(int itemID) {
+		for (int i = 0; i < itemList.size(); i++) {
+			if (itemList.get(i).itemID == itemID) {
+				itemList.remove(i);
+			}
+		}
+	}
+
+	public void outputItem() {
+		for (Items I : itemList) {
+			System.out.println("Item ID:" + I.itemID +" Item Name:"+ I.itemName+" Ammount Available:"+I.numberAvailable+" Publish date:"+I.publishDate);
+		}
+	}
+
+	public void emptyItem() {
+		itemList.clear();
+	}
+	
+}

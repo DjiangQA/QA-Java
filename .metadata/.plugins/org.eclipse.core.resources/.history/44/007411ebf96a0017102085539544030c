@@ -1,0 +1,46 @@
+
+public class People {
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+	
+	public static String[] name(String[] name)
+	{
+		String[] names = new String [5];
+		names[0] = "Dave";
+		names[1] = "joe";
+		names[2] = "tom";
+		names[3] = "steve";
+		names[4] = "alex";
+		
+
+		return names;
+	}
+	
+	public static int[] age(int[] age)
+	{
+		int[] ages = new int [5];
+		ages[0] = 21;
+		ages[1] = 35;
+		ages[2] = 19;
+		ages[3] = 45;
+		ages[4] = 36;
+		
+		return ages[];
+	}
+
+	public static String[] jobTitle(String[] jobT)
+	{
+		String[] jobTs = new String [5];
+		jobTs[0] = "JT1";
+		jobTs[1] = "JT2";
+		jobTs[2] = "JT3";
+		jobTs[3] = "JT4";
+		jobTs[4] = "JT5";
+		
+		return jobTs[];
+	}
+}

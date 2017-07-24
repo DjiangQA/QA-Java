@@ -1,0 +1,81 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+	static Paint  cheapoMax = new Paint("cheapoMax", 19.99,20.0,10.0);
+	static Paint averageJoe = new Paint("averageJoe", 17.99,15.0,11.0);
+	static Paint duluxourousPaints = new Paint("duluxourousPaints",25.0,10.0,20.0);
+	
+	double result1;
+	double result2;
+	double result3;
+	static int roomSize;
+	String result4;
+	
+	public static void main(String[] args) 
+	{
+		
+		ArrayList<Paint> Paints = new ArrayList<Paint>();
+		Paints.addAll(Arrays.asList(cheapoMax, averageJoe, duluxourousPaints));
+		
+		Scanner reader = new Scanner(System.in); 
+		System.out.print("Please enter the room size: ");
+		roomSize = reader.nextInt();
+	}
+	
+	public String Q1 ()
+	{
+		
+		String Q1 = null;
+		double litreneeded1 = roomSize/cheapoMax.coverage ;
+		double litreneeded2 = roomSize/averageJoe.coverage ;
+		double litreneeded3 = roomSize/duluxourousPaints.coverage ;
+		
+		result1 = litreneeded1;
+		result2 = litreneeded2;
+		result3 = litreneeded3;
+		
+		
+		if (litreneeded1 > litreneeded2 & litreneeded1 > litreneeded3)
+		{
+			Q1 = "cheapoMax";
+		}
+		else if (litreneeded2 > litreneeded1 & litreneeded2 > litreneeded3)
+		{
+			Q1 = "averageJoe";
+		}
+		else if (litreneeded3 > litreneeded1 & litreneeded3 > litreneeded2)
+		{
+			Q1 = "duluxourousPaints";
+		}
+		
+		return Q1;
+	}
+	
+	public String Q2()
+	{
+		double ans1 = result1 / cheapoMax.litre;
+		double ans2 = result2 / averageJoe.litre;
+		double ans3 = result3 / duluxourousPaints.litre;
+		double ans4 = ans1*cheapoMax.price;
+		double ans5 = ans2*averageJoe.price;
+		double ans6 = ans3*duluxourousPaints.price;
+		
+		if (ans1 > ans2 & ans1 > ans3)
+		{
+			result4 = cheapoMax.Name;
+		}
+		else if (ans2 > ans1 & ans2 > ans3)
+		{
+			result4 = averageJoe.Name;
+		}
+		else if (ans3 > ans2 & ans3 > ans1)
+		{
+			result4 = duluxourousPaints.Name;
+		}
+		
+		return "";
+	}
+
+}

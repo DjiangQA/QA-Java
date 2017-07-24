@@ -1,0 +1,67 @@
+
+public class Helloworld {
+	
+	public static void main(String[] args) 
+	{
+		int[] arrays = new int[11];
+		
+		String text = "Hellow World!";
+		System.out.println(text);
+	    Q3("Hellow World! 2");
+	    System.out.println(Q4());
+	    System.out.println();
+	    System.out.println(Q5(1,2));
+	    System.out.println();
+	    System.out.println(Q6(2,3, false));
+	    System.out.println();
+	    System.out.println(Q7(1,0));
+	    System.out.println();
+	    for (int i = 0 ; i<10 ; i++)
+	    {
+	    	System.out.println(Q7(1,i));
+	    	arrays[i] = i;
+	    }
+	    
+	    for (int i2 = 0; i2 < 11 ; i2++)
+	    {
+	    	System.out.println(arrays[i2]);
+	    }
+	}
+	
+	public static void Q3 (String text1)
+	{
+		System.out.println(text1);
+	}
+	
+	public static String Q4()
+	{
+		return("Hellow World! 3");
+	}
+	
+	public static int Q5 (int a, int b)
+	{
+		return(a+b);
+	}
+	
+	public static int Q6 (int a, int b, boolean c)
+	{
+		if (c == true)
+		{
+			return (a+b);
+		}
+		else
+		{
+			return (a*b);
+		}
+	}
+	
+	public static int Q7 (int a, int b)
+	{
+		return (a+b);
+	}
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,10 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		car BMW = new car(1,20000,"BMW","M3",24);
+		System.out.println(BMW.returninfo());
+
+	}
+
+}

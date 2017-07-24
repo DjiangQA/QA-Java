@@ -1,0 +1,15 @@
+
+public class Vehicle {
+	int[] vehicleID = new int [10];
+	String[] vehicleType = new String [10];
+	int[] vehicleCost = new int[10];
+	
+	
+	
+	/*Garage car1 = new Garage(01,"car1",10);
+	Garage car2 = new Garage(02,"car2",20);
+	Garage car3 = new Garage(03,"car3",30);
+	Garage car4 = new Garage(04,"car4",40);
+	Garage car5 = new Garage(05,"car5",50);
+*/
+}

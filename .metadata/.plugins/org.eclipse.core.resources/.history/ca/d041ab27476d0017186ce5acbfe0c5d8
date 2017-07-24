@@ -1,0 +1,21 @@
+package Testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class Extra {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@Test
+	public void testSomething() {
+		
+		
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,22 @@
+
+public class Uniquesum {
+
+	public static void main(String[] args) 
+	{
+		{
+			int a = 1;
+			int b = 3;
+			int c = 3;
+			int d = 0;
+
+			if (a != b & a != c & b != a & b != c & c != a & c != b) 
+			{
+				d = a + b + c;
+			}
+			System.out.println(d);
+
+		}
+
+	}
+
+}

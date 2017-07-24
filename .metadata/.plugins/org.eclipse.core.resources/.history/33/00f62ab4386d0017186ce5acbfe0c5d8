@@ -1,0 +1,16 @@
+import java.io.*;
+
+public class Readerwriter {
+	public static void Writer() throws FileNotFoundException
+	{
+		
+		PrintWriter writer = new PrintWriter("People List.txt");
+		writer.println();
+		writer.println("The second line");
+		writer.close();
+		
+	}
+	
+	
+	
+}

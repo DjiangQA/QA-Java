@@ -1,0 +1,12 @@
+package Main;
+
+public class Extra {
+	public static String something() 
+	{
+		String i = null;
+
+		i = "!";
+
+		return i;
+	}
+}

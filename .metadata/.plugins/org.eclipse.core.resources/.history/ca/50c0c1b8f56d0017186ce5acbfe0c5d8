@@ -1,0 +1,17 @@
+package testing;
+import main.Maps;
+
+public class TestMaps {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@Test
+	public void testGetLocation()
+	{
+		Maps m = new Maps("map1", 01, 10, "21/07/2017", "Manchester");
+		assertEquals("Manchester", m.());
+	}
+
+}

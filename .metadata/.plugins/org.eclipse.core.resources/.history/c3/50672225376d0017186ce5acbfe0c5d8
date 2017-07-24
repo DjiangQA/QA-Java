@@ -1,0 +1,15 @@
+import java.io.*;
+
+public class Readerwriter {
+	public void Writer() throws FileNotFoundException
+	{
+		PrintWriter writer = new PrintWriter("the-file-name.txt");
+		writer.println("The first line");
+		writer.println("The second line");
+		writer.close();
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,48 @@
+package main;
+
+import java.util.ArrayList;
+
+public abstract class Items {
+	String itemName;
+	int itemID;
+	int numberAvailable;
+	String publishDate;
+	
+	ArrayList<Items> itemList = new ArrayList<Items>();
+	
+	public void addItem(Items I) {
+		itemList.add(I);
+	}
+	
+	public void removeItemById(String registration) 
+	{
+		for (int i = 0; i < itemList.size(); i++) 
+		{
+			if (itemList.get(i).itemID == itemID) 
+			{
+				itemList.remove(i);
+			}
+		}
+	}
+	
+	public void outputItem(){
+		for (Items I : itemList) {
+			System.out.println(I);
+		}
+	}
+	
+	public void emptyItem() {
+		itemList.clear();
+	}
+	
+
+	public Items (String itemName, int itemID, int numberAvailable , String publishDate)
+	{
+		this.itemName = itemName;
+		this.itemID = itemID;
+		this.numberAvailable = numberAvailable;
+		this.publishDate = publishDate;
+	}
+	
+	
+}

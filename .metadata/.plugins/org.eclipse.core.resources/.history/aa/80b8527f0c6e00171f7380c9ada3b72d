@@ -1,0 +1,29 @@
+package main;
+
+import java.util.ArrayList;
+
+public class UserManager {
+	ArrayList<Users> userList = new ArrayList<Users>();
+
+	public void addItem(Users I) {
+		userList.add(I);
+	}
+
+	public void removeItemById(int userID) {
+		for (int i = 0; i < userList.size(); i++) {
+			if (userList.get(i).userID == userID) {
+				userList.remove(i);
+			}
+		}
+	}
+
+	public void outputItem() {
+		for (Users I : userList) {
+			System.out.println(I);
+		}
+	}
+
+	public void emptyItem() {
+		userList.clear();
+	}
+}

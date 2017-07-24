@@ -1,0 +1,35 @@
+package main;
+
+public class Main {
+
+	public static void main(String[] args) 
+	{
+		spiralRoot(5);
+	}
+	
+	public static void spiralRoot (int n)
+	{
+		int result = 0;
+		int maxnum = n*n;
+		while(Math.sqrt(result) <= n)
+			{
+				//System.out.println(result);
+				result++;
+			}
+		
+		int [] x = new int [n*n];
+		int [][]y = new int [n][n];
+		
+		for (int i = 0; i <= n*n -1; i ++)
+		{
+			x[i] = i+1;
+		}
+		
+		for (int i = 0; i <= n*n -1; i ++)
+		{
+			//System.out.print(x[i]+ " ");
+			
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+
+public class Paint {
+	
+	double price;
+	double litre;
+	double coverage;
+	
+	public Paint(double a,double b,double c)
+	{
+		price = a;
+		litre = b;
+		coverage = c;
+	}
+	
+}

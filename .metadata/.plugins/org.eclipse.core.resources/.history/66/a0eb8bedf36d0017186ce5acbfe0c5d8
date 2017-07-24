@@ -1,0 +1,10 @@
+package main;
+
+public class Public extends Users{
+
+	public Public(String userName, int userID, String borrowedItems) {
+		super(userName, userID, borrowedItems);
+		
+	}
+
+}

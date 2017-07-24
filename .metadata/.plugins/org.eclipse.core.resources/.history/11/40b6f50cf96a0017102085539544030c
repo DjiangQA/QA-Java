@@ -1,0 +1,16 @@
+
+public class Person {
+	String name;
+	int age;
+	String jobTitle;
+	
+	public Person(String setName, int setAge, String setJob)
+	{
+		name = setName;
+		age = setAge;
+		jobTitle = setJob;
+		//over load
+		
+		
+	}
+}

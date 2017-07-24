@@ -1,0 +1,20 @@
+
+public class Garage {
+	int carID;
+	String carType;
+	int carCost;
+	
+	public String returninfo()
+	{
+		return new String (carID + " " + carType + " " + carCost + " ");
+	}
+	
+	public Garage(int setID, String setType, int setCost)
+	{
+		carID = setID;
+		carType = setType;
+		carCost = setCost;
+		//over load
+		
+	}
+}

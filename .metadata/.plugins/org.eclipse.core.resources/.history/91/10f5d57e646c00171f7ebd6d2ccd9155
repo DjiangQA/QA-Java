@@ -1,0 +1,10 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		Garage garage1 = new Garage();
+		
+		Garage newVehicle = new Garage(4, "car4", 400, "M4", false);
+	}
+
+}

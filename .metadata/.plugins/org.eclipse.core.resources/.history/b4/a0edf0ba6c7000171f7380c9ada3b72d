@@ -1,0 +1,28 @@
+package main;
+
+public class Newspaper extends Items {
+	
+	String publisher;
+	
+	public String newsPaperInfo()
+	{
+		return new String ("Publisher: "+ publisher +" Name: "+ itemName + " item ID:" + itemID + " Number Available:" + numberAvailable + " PublishDate: " + publishDate);
+	}
+
+	public Newspaper(String itemName, int itemID, int numberAvailable, String publishDate, String publisher) {
+		super(itemName, itemID, numberAvailable, publishDate);
+		this.publisher = publisher;
+	}
+
+	public String getPublisher() {
+		return publisher;
+	}
+
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+	
+	
+	
+
+}

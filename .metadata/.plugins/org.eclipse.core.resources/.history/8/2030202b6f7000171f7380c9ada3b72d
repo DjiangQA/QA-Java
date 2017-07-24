@@ -1,0 +1,48 @@
+package main;
+
+import java.util.ArrayList;
+
+public class ItemManager {
+	//ArrayList<Items> itemList = new ArrayList<Items>();
+	ArrayList<Books> BooksList = new ArrayList<Books>();
+	ArrayList<Newspaper> NewspaperList = new ArrayList<Newspaper>();
+	ArrayList<Maps> MapsList = new ArrayList<Maps>();
+	Books B = null;
+	Newspaper N = null;
+	Maps M = null;
+	/*public void addItem(Items I) {
+		itemList.add(I);
+	}*/
+
+	public void addItem(String itemName, int itemID, int numberAvailable, String publishDate, String generes) {
+		BooksList.add(B);
+	}
+
+	public void addItem(String itemName, int itemID, int numberAvailable, String publishDate, String location, String areaCode) {
+		
+	}
+
+	public void addItem(String itemName, int itemID, int numberAvailable, String publishDate, String publisher, boolean languageEnglish) {
+		
+	}
+
+	public void removeItemById(int itemID) {
+		for (int i = 0; i < itemList.size(); i++) {
+			if (itemList.get(i).itemID == itemID) {
+				itemList.remove(i);
+			}
+		}
+	}
+
+	public void outputItem() {
+		for (Items I : itemList) {
+			System.out.println("Item ID:" + I.itemID + " Item Name:" + I.itemName + " Ammount Available:"
+					+ I.numberAvailable + " Publish date:" + I.publishDate);
+		}
+	}
+
+	public void emptyItem() {
+		itemList.clear();
+	}
+
+}

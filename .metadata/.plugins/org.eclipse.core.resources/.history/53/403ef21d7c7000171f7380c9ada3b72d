@@ -1,0 +1,63 @@
+package testing;
+
+import main.Books;
+import main.ItemManager;
+import main.Items;
+import main.Maps;
+import main.Newspaper;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestItemmanager {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@Test
+	public void addItems() {
+		Newspaper n = new Newspaper("Newspaper1", 01, 10, "21/07/2017", "The SUN", false);
+		assertEquals("The SUN", n.getPublisher());
+		
+		Books b = new Books("book1", 01, 10, "21/07/2017", "action");
+		assertEquals("action", b.getGeneres());
+		
+		Maps m = new Maps("book1", 01, 10, "21/07/2017", "Sheffield", "AC5");
+		assertEquals("Sheffield", m.getLocation());
+		
+	}
+	
+	public void removeItems() {
+		ItemManager I = new ItemManager();
+		Newspaper n = new Newspaper("Newspaper1", 2, 10, "21/07/2017", "The SUN", false);
+		I.removeItemById(2);
+		assertEquals("The SN", n.getPublisher());
+		//assertNull(n.getPublisher());
+		
+	}
+	
+	public void checkInItems() {
+		
+	}
+	
+	public void checkOutItems() {
+		
+	}
+	
+	public void updateItems() {
+		
+	}
+	
+	public void displayItems() {
+		
+	}
+	
+	
+
+
+}

@@ -1,0 +1,60 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+	double CM = 19.99;
+	double litre1 = 20.0;
+	double coverage1 = 10.0;
+	
+	double AJ = 17.99; //17.99
+	double litre2 = 15.0;
+	double coverage2 = 11.0;
+	
+	double DP = 25.0; //25
+	double litre3 = 10.0;
+	double coverage3 = 20.0;
+	
+	//cheapest to buy
+	//double ans1 =  litre1/CM;
+	double ans1 =  CM/litre1;
+	
+	//double ans2 =  litre2/AJ;
+	double ans2 =  AJ/litre2;
+	
+	//double ans3 =  litre3/DP;
+	double ans3 =  DP/litre3;
+	
+	
+	System.out.println(ans1);
+	System.out.println(ans2);
+	System.out.println(ans3);
+	
+	//waste the least
+	double ans4 = coverage1*litre1;
+	double ans5 = coverage2*litre2;
+	double ans6 = coverage3 * litre3;
+	
+	System.out.println(ans4);
+	System.out.println(ans5);
+	System.out.println(ans6);
+	
+	//best choice for any room
+	
+	int roomsize = 100; //m2
+	
+	double ans7 = ans1*ans4;
+	double ans8 = ans2*ans5;
+	double ans9 = ans3*ans6;
+	
+	}
+
+}
+
+//CheapoMax (20Litre) £19.99
+//This tin of paint will cover 10m2 per Litre
+
+//AverageJoes (15 Litre) £17.99
+//This tin of paint will cover 11m2 per Litre
+
+//DuluxourousPaints (10 Litre) £25
+//This tin of paint will cover 20m2 per Litre

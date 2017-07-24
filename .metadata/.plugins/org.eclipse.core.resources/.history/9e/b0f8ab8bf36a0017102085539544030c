@@ -1,0 +1,27 @@
+
+public class Toohot {
+
+	public static void main(String[] args) {
+		int temp = 99;
+		boolean isSummer = false;
+
+		if (isSummer = true) {
+
+			if (temp > 60 & temp < 100) {
+				System.out.println("temp within range");
+			} else {
+				System.out.println("temp out of range");
+			}
+
+		} else if (isSummer = false) {
+			if (temp > 60 & temp < 90) {
+				System.out.println("temp within range");
+			} else {
+				System.out.println("temp out of range");
+			}
+
+		}
+
+	}
+
+}

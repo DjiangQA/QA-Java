@@ -1,0 +1,28 @@
+
+public class Helloworld {
+	
+	public static void main(String[] args) 
+	{
+		String text = "Hellow World!";
+		System.out.println(text);
+	    Q3("Hellow World! 2");
+	    System.out.println(Q4());
+	    System.out.println(Q5(1,2));
+	}
+	
+	public static void Q3 (String text1)
+	{
+		System.out.println(text1);
+	}
+	
+	public static String Q4()
+	{
+		return("Hellow World! 3");
+	}
+	
+	public static int Q5 (int a, int b)
+	{
+		return(a+b);
+	}
+	
+}

@@ -1,0 +1,58 @@
+package main;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ItemManager I = new ItemManager();
+		UserManager U = new UserManager();
+		
+		Books b1 = new Books(null, 0, 0, null, null);
+		Books b2 = new Books(null, 0, 0, null, null);
+		Books b3 = new Books(null, 0, 0, null, null);
+		Books b4 = new Books(null, 0, 0, null, null);
+		Newspaper n1 = new Newspaper(null, 0, 0, null, null);
+		Newspaper n2 = new Newspaper(null, 0, 0, null, null);
+		Newspaper n3 = new Newspaper(null, 0, 0, null, null);
+		Newspaper n4 = new Newspaper(null, 0, 0, null, null);
+		Maps m1 = new Maps(null, 0, 0, null, null);
+		Maps m2 = new Maps(null, 0, 0, null, null);
+		Maps m3 = new Maps(null, 0, 0, null, null);
+		Maps m4 = new Maps(null, 0, 0, null, null);
+		
+		Public p1 = new Public(null, 0, null, null);
+		Public p2 = new Public(null, 0, null, null);
+		Public p3 = new Public(null, 0, null, null);
+		Public p4 = new Public(null, 0, null, null);
+		Staff s1 = new Staff(null, 0, null, 0);
+		Staff s2 = new Staff(null, 0, null, 0);
+		Staff s3 = new Staff(null, 0, null, 0);
+		Staff s4 = new Staff(null, 0, null, 0);
+		
+		I.addItem(b1);
+		I.addItem(b2);
+		I.addItem(b3);
+		I.addItem(b4);
+		I.addItem(n1);
+		I.addItem(n2);
+		I.addItem(n3);
+		I.addItem(n4);
+		I.addItem(m1);
+		I.addItem(m2);
+		I.addItem(m3);
+		I.addItem(m4);
+		I.outputItem();
+		
+		U.addItem(p1);
+		U.addItem(p2);
+		U.addItem(p3);
+		U.addItem(p4);
+		U.addItem(s1);
+		U.addItem(s2);
+		U.addItem(s3);
+		U.addItem(s4);
+		U.outputItem();
+		
+
+	}
+
+}

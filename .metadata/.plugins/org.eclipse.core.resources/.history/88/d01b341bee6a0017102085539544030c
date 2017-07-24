@@ -1,0 +1,42 @@
+
+public class Intermediate {
+
+	public static void main(String[] args) 
+	{
+		int a = 20;
+		int b = 23;
+		int c = 21;
+		int d = 0;
+		int e = 0;
+		
+		d = c - a;
+		e = c - b;
+		
+		if (a > c)
+		{
+			System.out.println("Player 1 out");
+		}
+		
+		if (b > c)
+		{
+			System.out.println("Player 2 out");
+		}
+		
+		if (d>e)
+		{
+			System.out.println(d);
+			System.out.println("Player 1 WIN");
+		}
+		else
+		{
+			System.out.println(e);
+			System.out.println("Player 2 WIN");
+		}
+		
+		
+		System.out.println();
+		
+		
+	}
+
+}

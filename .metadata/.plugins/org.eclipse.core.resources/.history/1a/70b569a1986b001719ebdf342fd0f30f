@@ -1,0 +1,14 @@
+
+public abstract class Vehicle {
+	int vehicleID;
+	String vehicleName;
+	int Vehicleprice;
+	
+	public Vehicle(int setID, String setName, int setPrice)
+	{
+		vehicleID = setID;
+		vehicleName = setName;
+		Vehicleprice = setPrice;
+		//over load
+	}
+}

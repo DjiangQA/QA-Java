@@ -1,0 +1,23 @@
+package main;
+
+public class Main {
+
+	public static void main(String[] args) 
+	{
+		System.out.println(spiralRoot(5));
+	}
+	
+	public static int spiralRoot (int n)
+	{
+		int result = 0;
+		while(Math.sqrt(result) == n)
+			{
+				System.out.print(result);
+				result ++;
+				
+				
+			}
+		return result;
+	}
+
+}

@@ -1,0 +1,21 @@
+
+public class car extends Vehicle {
+	String carName;
+	String carModle;
+	boolean allWheelDrive;
+	
+	public String returninfo()
+	{
+		return new String (carName + " " + carModle + " " + allWheelDrive + " ");
+	}
+	
+	public car(int setID, String setName, int setPrice, String setModle, boolean setDrive)
+	{
+		super (setID, setName, setPrice);
+		carName = setName;
+		carModle = setModle;
+		allWheelDrive = setDrive;
+		//over load
+	}
+	
+}
