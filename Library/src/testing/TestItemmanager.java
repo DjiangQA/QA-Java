@@ -32,28 +32,38 @@ public class TestItemmanager {
 		I.removeItemById(1);
 		assertNull(I.getName());
 	}
-
-	public void checkOutItems() {
-
-	}
-
-	public void checkInItems() {
-
-	}
 	
 	@Test
 	public void updateItems() {
 		ItemManager I = new ItemManager();
 		Books b1 = new Books("Book1", 1, 10, "date1", "G1");
 		I.addItem(b1);
-		Books b1 = new Books("Book10", 10, 100, "date10", "G10");
-		I.addItem(b1);
+		Books b2 = new Books("Book4", 1, 10, "date1", "G1");
+		I.updateItem(b2);
+		assertEquals("Book4",I.getName());
 		
-		assertEquals("Book10", I.getName());
 	}
-
-	public void displayItems() {
-
+	
+	@Test
+	public void checkOutItems() {
+		ItemManager I = new ItemManager();
+		Books b1 = new Books("Book1", 1, 10, "date1", "G1");
+		I.addItem(b1);
+		Books b2 = new Books("Book1", 1, 9, "date1", "G1");
+		I.updateItem(b2);
+		System.out.println(I.getAvailable());
+		assertEquals(9,I.getAvailable());
+	}
+	
+	@Test
+	public void checkInItems() {
+		ItemManager I = new ItemManager();
+		Books b1 = new Books("Book1", 1, 10, "date1", "G1");
+		I.addItem(b1);
+		Books b2 = new Books("Book1", 1, 11, "date1", "G1");
+		I.updateItem(b2);
+		System.out.println(I.getAvailable());
+		assertEquals(11,I.getAvailable());
 	}
 
 }

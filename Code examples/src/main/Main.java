@@ -29,14 +29,12 @@ public class Main {
 		map.put(2, "name2");
 		map.put(3, "name3");
 		map.put(4, "name4");
-		
+		//-------------------------------Get value based on KEY-------------------------------
 		//System.out.println(map.get(1));
 		//System.out.println(map.get(2));
-		
+		//----------------------------Get all value within the Map----------------------------
 		Set set = map.entrySet();
-		
 		Iterator iterator = set.iterator();
-		
 		while(iterator.hasNext())
 		{
 			Map.Entry mentry = (Map.Entry)iterator.next();

@@ -1,0 +1,16 @@
+package main;
+
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		Readerwriter R = new Readerwriter();
+		for (int i = 0; i < 10; i++) {
+			R.Reader();
+			R.Sorter();
+		}
+
+	}
+
+}

@@ -1,0 +1,44 @@
+package main;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+
+public class Readerwriter {
+	
+	private static final String FILENAME = "C:\\Users\\David\\eclipse-workspace\\HashMaps Anagrams\\wordList.txt";
+	
+	HashMap<String,ArrayList<String>> sort = new HashMap<>();
+	
+	ArrayList<String> wordBefore = new ArrayList<>();
+	ArrayList<String> wordAfter = new ArrayList<>();
+	
+	int counter = 1;
+	String line;
+	int size;
+	
+	public void Reader() throws IOException
+	{
+		FileReader reader = new FileReader(FILENAME);
+		BufferedReader br = new BufferedReader(reader);
+		
+		while((line = br.readLine())!=null)
+		{
+			wordBefore.add(line);
+			size++;
+		}
+	}
+	
+	public void Sorting()
+	{
+		
+		char [] chars = wordBefore.get(size).toCharArray();
+		Arrays.sort(chars);
+		String line2 = new String (chars);
+		System.out.println(line2);
+	}
+
+}

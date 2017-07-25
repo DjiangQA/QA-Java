@@ -11,16 +11,30 @@ public abstract class Users {
 		this.userID = userID;
 		this.borrowedItems = borrowedItems;
 	}
-	
+
 	public String getUserName() {
 		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public int getUserID() {
 		return userID;
 	}
-	
-	public String getUserBorrowedItems() {
+
+	public void setUserID(int userID) {
+		this.userID = userID;
+	}
+
+	public String getBorrowedItems() {
 		return borrowedItems;
 	}
+
+	public void setBorrowedItems(String borrowedItems) {
+		this.borrowedItems = borrowedItems;
+	}
+	
+	
 }

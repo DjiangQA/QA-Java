@@ -13,8 +13,8 @@ public class Persons {
 
 	@Test
 	public void testPerson() {
-		Person testing = new Person();
-		assertNotNull(testing.);
+		//Person testing = new Person();
+		//assertNotNull(testing.);
 		
 		
 		fail("Not yet implemented");
