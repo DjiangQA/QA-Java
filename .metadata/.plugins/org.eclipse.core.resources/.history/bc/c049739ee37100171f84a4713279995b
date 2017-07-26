@@ -1,0 +1,41 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class main {
+
+	public static void main(String[] args) {
+		int startValue = 1;
+		int finishValue = 3000000;
+
+		System.out.println("Prime numbers between " + startValue + " and " + finishValue);
+		sorter(startValue,finishValue);
+	}
+
+	public static void sorter(int startValue, int finishValue) {
+		HashMap<Integer, Integer> map = new HashMap<>();
+		Set set = map.entrySet();
+		Iterator iterator = set.iterator();
+		int secondNumber = 0;
+		int counter = 0;
+		
+		for (int i = 1; i < finishValue; i++) {
+			secondNumber = i - 2;
+			counter ++;
+			if(i / secondNumber != 1)
+			{
+				System.out.println(i);
+				map.put(counter, i);
+			}
+			
+		}
+
+		while (iterator.hasNext()) {
+			Map.Entry mentry = (Map.Entry) iterator.next();
+			System.out.println("Key is:" + mentry.getKey() + " value is:" + mentry.getValue());
+		}
+
+	}
+
+}

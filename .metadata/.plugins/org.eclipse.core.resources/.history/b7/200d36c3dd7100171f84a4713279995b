@@ -1,0 +1,45 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		// define limit
+		int limit = 3000000;
+		int count = 0;
+		HashMap<Integer, Integer> map = new HashMap<>();
+
+		System.out.println("Prime numbers between 1 and " + limit);
+
+		// loop through the numbers one by one
+		for (int i = 1; i < limit; i++) {
+
+			boolean isPrime = true;
+			count++;
+			// check to see if the number is prime
+			for (int j = 2; j < i; j++) {
+
+				if (i % j == 0) {
+					isPrime = false;
+					break;
+				}
+			}
+			// print the number
+			if (isPrime) {
+				// System.out.println(i + " ");
+				map.put(count, i);
+			}
+		}
+
+		Set set = map.entrySet();
+		Iterator iterator = set.iterator();
+		while (iterator.hasNext()) {
+			Map.Entry mentry = (Map.Entry) iterator.next();
+			System.out.println("Key is:" + mentry.getKey() + " value is:" + mentry.getValue());
+		}
+
+	}
+}
