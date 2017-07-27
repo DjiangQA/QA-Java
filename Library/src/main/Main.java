@@ -1,8 +1,11 @@
 package main;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		ItemManager I = new ItemManager();
 		UserManager U = new UserManager();
 		
@@ -24,7 +27,10 @@ public class Main {
 		//I.addItem(ItemManager.m4);
 		//I.removeItemById(2);
 		//I.updateItem(m4);
-		I.outputItem();
+		//I.outputItem();
+		I.Writer();
+		I.Reader();
+		
 		
 		
 		
@@ -38,8 +44,6 @@ public class Main {
 		U.addUser(UserManager.s3);
 		U.addUser(UserManager.s4);
 		//U.outputUser();
-		
-		
 
 	}
 

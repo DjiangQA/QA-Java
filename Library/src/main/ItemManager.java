@@ -1,5 +1,10 @@
 package main;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class ItemManager {
@@ -80,6 +85,38 @@ public class ItemManager {
 
 		}
 		return null;
+	}
+	
+	private static final String FILENAME = "C:\\Users\\Administrator\\Downloads\\Java\\Library\\Books.txt";
+	
+	public void Writer() throws FileNotFoundException 
+	{
+		PrintWriter writer = new PrintWriter("Books.txt");
+		
+		for (Items I : itemList) {
+			writer.print(I.itemName);
+			writer.print(" ");
+			writer.print(I.itemID);
+			writer.print(" ");
+			writer.print(I.numberAvailable);
+			writer.print(" ");
+			writer.println(I.publishDate);
+		}
+		
+		writer.close();
+	}
+	
+	public void Reader() throws IOException
+	{
+		FileReader reader = new FileReader(FILENAME);
+		BufferedReader br = new BufferedReader(reader);
+		
+		String line;
+		while((line = br.readLine())!=null)
+		{
+			System.out.println(line);
+			
+		}
 	}
 
 }
